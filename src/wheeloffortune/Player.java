@@ -10,12 +10,16 @@ package wheeloffortune;
  * @author Alex
  */
 public class Player {
-    String name;
-    int gameCash;
-    int roundCash;
+    private String name;
+    private int gameCash;
+    private int roundCash;
 
     public Player(String newName) {
         name = newName;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void newRound() {
