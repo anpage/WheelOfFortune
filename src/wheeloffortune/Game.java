@@ -10,5 +10,7 @@ package wheeloffortune;
  * @author Alex
  */
 public class Game {
+    private Player[] players;
+    private Puzzle currPuzzle;
     
 }

@@ -10,5 +10,10 @@ package wheeloffortune;
  * @author Alex
  */
 public class Puzzle {
+    private int number;
+    private String solution;
+    private String category;
+    private String guessed;
+    
     
 }

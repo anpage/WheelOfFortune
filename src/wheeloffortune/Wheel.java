@@ -5,10 +5,12 @@
  */
 package wheeloffortune;
 
+import java.util.Random;
+
 /**
  *
  * @author Alex
  */
-public class Wheel {
-    
+public interface Wheel {
+    int getRandomSlot();
 }
