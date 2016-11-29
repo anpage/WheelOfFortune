@@ -1,0 +1,34 @@
+Category = On The Map
+Puzzle = San Diego California
+Puzzle = Paris France
+Puzzle = Chattanooga Tennessee
+Puzzle = Berlin Germany
+Puzzle = Honolulu Hawaii
+
+Category = Event
+Puzzle = Scuba diving in Aruba
+Puzzle = Lord of the Rings Premier
+Puzzle = Cinco de Mayo
+Puzzle = Erupting Volcano
+Puzzle = Senior Year Prom
+
+Category = Movie Title
+Puzzle = Back to the Future
+Puzzle = Gran Torino
+Puzzle = Secondhand Lions
+Puzzle = O Brother Where Art Thou
+Puzzle = Hacksaw Ridge
+
+Category = Before & After
+Puzzle = Act Your Age Of Innocence
+Puzzle = Revenge of the Titanfall
+Puzzle = Have a Nice Day to Remember
+Puzzle = Twelve Angry Beavers
+Puzzle = Like a Rock of Ages
+
+Category = What Are You Doing?
+Puzzle = Chewing Gum
+Puzzle = Dreaming of Cheese
+Puzzle = Studying for Finals
+Puzzle = Writing Software
+Puzzle = Falling Asleep at the Keyboard
