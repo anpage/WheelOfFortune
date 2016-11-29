@@ -19,7 +19,7 @@ import java.util.logging.Logger;
  */
 public class PuzzleReader {
     private List<Puzzle> readPuzzles;
-    private Random rand;
+    private final Random rand;
     
     public PuzzleReader(String fileName) {
         readPuzzles = new ArrayList<>();

@@ -6,17 +6,16 @@
 package wheeloffortune;
 
 import java.util.Random;
-import java.util.Arrays;
 
 /**
  *
  * @author Alex
  */
 public class HWeenWheel implements Wheel {
-    private int numSlots;
-    private int[] slots;
+    private final int numSlots;
+    private final int[] slots;
 
-    private Random rand = new Random();
+    private final Random rand = new Random();
 
     public HWeenWheel() {
         numSlots = 25;
@@ -40,6 +39,7 @@ public class HWeenWheel implements Wheel {
         }
     }
 
+    @Override
     public int getRandomSlot() {
         return slots[rand.nextInt(numSlots)];
     }

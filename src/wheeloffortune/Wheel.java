@@ -5,8 +5,6 @@
  */
 package wheeloffortune;
 
-import java.util.Random;
-
 /**
  *
  * @author Alex

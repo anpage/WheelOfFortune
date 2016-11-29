@@ -10,7 +10,7 @@ package wheeloffortune;
  * @author Alex
  */
 public class Player {
-    private String name;
+    private final String name;
     private int gameCash;
     private int roundCash;
 
