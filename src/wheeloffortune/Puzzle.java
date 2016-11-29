@@ -15,10 +15,10 @@ public class Puzzle {
     private String solution;
     private String guessed;
 
-    public Puzzle() { // TODO: Implement real data
-        number = 0;
-        category = "Animals";
-        solution = "Kitty Cats";
+    public Puzzle(int num, String cat, String sol) { // TODO: Implement real data
+        number = num;
+        category = cat;
+        solution = sol;
         guessed = " ";
     }
 
