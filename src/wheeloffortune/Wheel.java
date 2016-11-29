@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package wheeloffortune;
 
 /**
- *
- * @author Alex
+ * Provides the (very simple) public interface for both types of wheels
  */
 public interface Wheel {
-    int getRandomSlot();
+
+    /**
+     * Spins the wheel
+     * A slot with -1 represents a bankrupt slot
+     * A slot with 0 represents a "lose a turn" slot
+     * Anything else is a cash value
+     * @return A random slot on the wheel
+     */
+    int spin();
 }

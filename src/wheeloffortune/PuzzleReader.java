@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package wheeloffortune;
 
 import java.io.BufferedReader;
@@ -14,13 +9,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author Alex
+ * Reads a given puzzle file and stores the information within
  */
 public class PuzzleReader {
     private List<Puzzle> readPuzzles;
     private final Random rand;
     
+    /**
+     * Creates a new instance pointed at the given file and reads in the puzzles
+     * @param fileName The path to the puzzle file to be read
+     */
     public PuzzleReader(String fileName) {
         readPuzzles = new ArrayList<>();
         rand = new Random();
@@ -51,10 +49,14 @@ public class PuzzleReader {
                 }
             }
        } catch (Exception ex) {
-            Logger.getLogger(PuzzleReader.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace(System.err);
         }
     }
     
+    /**
+     *
+     * @return A random puzzle read from the file
+     */
     public Puzzle getNewPuzzle() {
         // Generate a random index and return the puzzle there
         int index = rand.nextInt(readPuzzles.size());

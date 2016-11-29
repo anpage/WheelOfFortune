@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package wheeloffortune;
 
 import java.util.Random;
 
 /**
- *
- * @author Alex
+ * Provides the data and logic specific to the Halloween wheel
  */
 public class HWeenWheel implements Wheel {
     private final int numSlots;
@@ -17,6 +11,9 @@ public class HWeenWheel implements Wheel {
 
     private final Random rand = new Random();
 
+    /**
+     * Initialize the wheel's data according to the Halloween wheel specification
+     */
     public HWeenWheel() {
         numSlots = 25;
         int numLoseTurn = 3;
@@ -39,8 +36,15 @@ public class HWeenWheel implements Wheel {
         }
     }
 
+    /**
+     * Spins the wheel
+     * A slot with -1 represents a bankrupt slot
+     * A slot with 0 represents a "lose a turn" slot
+     * Anything else is a cash value
+     * @return A random slot on the wheel
+     */
     @Override
-    public int getRandomSlot() {
+    public int spin() {
         return slots[rand.nextInt(numSlots)];
     }
 }

@@ -1,0 +1,10 @@
+Game Halloween with 2 rounds
+
+Players
+Player1 = Alex
+Player2 = Bob
+
+Player Alex winnings = $2700
+Player Bob winnings = $0
+
+Game winner = Alex
