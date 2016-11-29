@@ -10,9 +10,9 @@ package wheeloffortune;
  * @author Alex
  */
 public class Puzzle {
-    private int number;
-    private String category;
-    private String solution;
+    private final int number;
+    private final String category;
+    private final String solution;
     private String guessed;
 
     public Puzzle(int num, String cat, String sol) { // TODO: Implement real data
@@ -28,7 +28,7 @@ public class Puzzle {
 
         // Append to guessed string if new guess,
         // otherwise return -1 to indicate existing guess
-        if (guessed.indexOf(guess) == -1){
+        if (!guessed.contains(guess)){
             guessed += guess;
         } else {
             return -1;
